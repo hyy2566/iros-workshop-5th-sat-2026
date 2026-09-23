@@ -163,6 +163,30 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 .online-entry-programme{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:16px 0 20px;padding:14px 16px;border:1px solid #dfe3e7;border-radius:5px;background:#f8f9fa}
 .online-entry-programme .online-label{font-size:14px;font-weight:500;color:#3c4043}
 @media(max-width:480px){.online-entry-programme{align-items:stretch}.online-entry-programme .online-join{width:100%}}
+
+/* Workshop paper and demo contributions. */
+.contribution-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 28px}
+.contribution-jumps a{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid #dadce0;border-radius:4px;font-size:13px;font-weight:500;background:#fff}
+.contribution-jumps span{background:#e8f0fe;border-radius:12px;padding:0 7px;color:#185abc;font-size:12px}
+.submission-section{margin:0 0 36px;scroll-margin-top:80px}
+.submission-card{padding:22px 0;border-bottom:1px solid #e0e0e0;scroll-margin-top:80px;overflow-wrap:anywhere}
+.submission-card:first-child{border-top:1px solid #e0e0e0}
+.submission-kind{font-size:11px;font-weight:700;color:#5f6368;text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px}
+.submission-card h3{font-size:17px;font-weight:500;line-height:1.45;color:#202124;margin:0 0 9px}
+.submission-authors{font-size:13px;line-height:1.7;margin-bottom:3px;color:#3c4043}
+.submission-affiliation{font-size:12px;color:#5f6368;line-height:1.6;margin-bottom:12px}
+.submission-summary{font-size:14px;line-height:1.75;margin-bottom:14px}
+.submission-actions{display:flex;flex-wrap:wrap;gap:10px}
+.submission-link{display:inline-block;padding:7px 12px;border:1px solid #c5d8f5;border-radius:4px;background:#f1f6fe;color:#185abc;font-size:12px;font-weight:500}
+.submission-link:hover{background:#e8f0fe;text-decoration:none}
+.submission-link.secondary{color:#3c4043;background:#fff;border-color:#dadce0}
+.demo-list{display:grid;gap:20px}
+.demo-card,.demo-card:first-child{padding:22px;border:1px solid #e0e0e0;border-radius:6px}
+.demo-video{display:block;width:100%;aspect-ratio:16/9;background:#17191d;object-fit:contain;border-radius:4px;margin-top:20px}
+.contribution-jumps a:focus-visible,.submission-link:focus-visible{outline:3px solid #1a73e8;outline-offset:3px}
+#call-for-contributions{scroll-margin-top:80px}
+.topbar-inner nav{min-width:0;flex:1}
+@media(max-width:768px){.topbar-inner{height:auto;flex-wrap:wrap;gap:0;padding:10px 16px 0}.site-title{font-size:16px;margin-right:0}.topbar-inner nav{flex-basis:100%;width:100%}.submission-section,.submission-card,#call-for-contributions{scroll-margin-top:112px}.submission-card h3{font-size:16px}.demo-card,.demo-card:first-child{padding:16px}}
 </style>
 </head>
 <body>
@@ -187,6 +211,7 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 <div class="online-entry-home"><a class="online-join" href="https://teams.microsoft.com/meet/315568178391328?p=7kTuYmatONdjpsnHCO" target="_blank" rel="noopener noreferrer" aria-label="Join online via Microsoft Teams (opens in a new tab)">Join Online via Microsoft Teams</a></div>
 </div>
 <div class="content">
+<div class="cb"><h3>Workshop Papers &amp; Demos</h3><p>Browse six paper contributions and two demonstrations, with manuscripts and demo videos. <a href="#contributions">Explore the contributions →</a></p></div>
 <h2 class="sec">Overview</h2>
 <p class="body">Human-robot interaction (HRI) is moving beyond conventional physical interfaces and isolated feedback channels toward sensorimotor augmentation that more closely matches human perception, proprioception, and decision-making. Despite major advances in robot learning, multimodal sensing, and shared autonomy, important challenges remain in reducing operator workload, preserving situational awareness, and enabling intuitive and safe HRI under uncertainty.</p>
 <p class="body">The workshop expands the concept introduced in our recent ICRA/IROS 2025 events by focusing on three concrete advances. First, it examines digital-twin-enhanced training and evaluation, including simulation-based scenario design, sim-to-real calibration, and demonstration data collection for reproducible benchmarking. Second, it addresses adaptive shared autonomy with measurable safeguards, including authority allocation, risk-sensitive control, safety filters, and online adaptation to operator state and task complexity. Third, it broadens the application scope beyond teleoperation in the narrow sense to include interactive assistance, rehabilitation, surgical robotics, marine operations, and nuclear decommissioning, where human capability, environmental uncertainty, and safety constraints must be treated jointly.</p>
@@ -262,6 +287,7 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 <tr><td>17:15 - 17:25</td><td>Poster Session</td><td>Selected poster authors give short oral introductions</td></tr>
 <tr><td>17:25 - 17:30</td><td>Closing Remarks and Next Steps</td><td>Summary of technical challenges, benchmarking needs, and deployment priorities</td></tr>
 </tbody></table>
+<p class="body">Workshop contributions: <a href="#papers">Browse papers</a> · <a href="#demos">Watch demos</a></p>
 <h2 class="sec">Invited Speakers</h2>
 <div id="spk-f"></div>
 </div></div>
@@ -288,7 +314,77 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 <div id="org-f"></div>
 </div></div>
 <div class="page" id="p-contributions"><div class="content">
-<h2 class="sec">Call for Contributions</h2>
+<h2 class="sec">Papers &amp; Demos</h2>
+<p class="body">Explore the workshop contributions, including six papers and two demonstrations.</p>
+<div class="contribution-jumps" aria-label="Contribution sections"><a href="#papers">Papers <span>6</span></a><a href="#demos">Demos <span>2</span></a><a href="#call-for-contributions">Submission information</a></div>
+<section id="papers" class="submission-section" aria-labelledby="papers-heading"><h2 class="sec" id="papers-heading">Papers</h2>
+<div class="paper-list"><article class="submission-card" id="paper-2" aria-labelledby="submission-title-2">
+<div class="submission-kind">Paper · 02</div>
+<h3 id="submission-title-2">Runtime-Constrained Residual Execution for Sequential Dual-Sided Grasping</h3>
+<p class="submission-authors">Zhangliang Gao, Zhihe Zhou, and Haoran Li</p>
+<p class="submission-affiliation">Xi’an Jiaotong-Liverpool University, China</p>
+<p class="submission-summary">A residual-control execution layer for retaining one object while grasping another with a dual-sided dexterous hand. A fixed upstream plan is combined with learned retention adjustments and deterministic command constraints; simulation results provide preliminary feasibility evidence.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-02-runtime-constrained-grasping.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article>
+<article class="submission-card" id="paper-4" aria-labelledby="submission-title-4">
+<div class="submission-kind">Paper · 04</div>
+<h3 id="submission-title-4">PAIR-Grasp: A Novel Benchmark Dataset and Model for Low-Light Robotic Grasp Detection</h3>
+<p class="submission-authors">Jiahui Zhang, Shuo Wang, Jiamin Zhang, Jing Yang, and Lu Chen</p>
+<p class="submission-affiliation">Shanxi University, China</p>
+<p class="submission-summary">A physics-grounded RGB-D grasp detection framework that extracts illumination-invariant structural cues for low-light manipulation. The study introduces the RLL-Grasp dataset and reports evaluations on the dataset and in real-world robotic grasping trials.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-04-pair-grasp.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article>
+<article class="submission-card" id="paper-5" aria-labelledby="submission-title-5">
+<div class="submission-kind">Paper · 05</div>
+<h3 id="submission-title-5">Execution-Conditioned Reference Handoff for Asynchronous Humanoid Vision-and-Language Navigation</h3>
+<p class="submission-authors">Guojie Cui, Tianyu Geng, Hansen Zhang, Fengchen Du, Jianning Chi, and Xiangyue Zhang</p>
+<p class="submission-affiliation">Northeastern University, China</p>
+<p class="submission-summary">An execution-aware framework that separates the arrival of a navigation reference from its acceptance by a moving humanoid. It adapts reference geometry and compares keeping, updating, or transitioning between trajectories, with evaluation in simulated Unitree G1 stair navigation.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-05-reference-handoff.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article>
+<article class="submission-card" id="paper-6" aria-labelledby="submission-title-6">
+<div class="submission-kind">Paper · 06</div>
+<h3 id="submission-title-6">Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions</h3>
+<p class="submission-authors">Xuhan Miao, Zijin Han, Yutong Shen, Haidong Huang, Shanliushui Gao, Lei Zhang, Xiaocong Li, and Chenguang Yang</p>
+<p class="submission-affiliation">Beijing University of Technology; The Hong Kong Polytechnic University; SynnoverAI; Technical University of Munich; University of Hamburg; Eastern Institute of Technology</p>
+<p class="submission-summary">A leader–follower teleoperation method that accounts for coupled transmissions, gravity loads, and actuator saturation. Coordinated motor-space saturation and feasible-reference updates preserve operator motion intent and improve trajectory continuity in real-robot experiments.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-06-operator-intent.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article>
+<article class="submission-card" id="paper-7" aria-labelledby="submission-title-7">
+<div class="submission-kind">Paper · 07</div>
+<h3 id="submission-title-7">Spatially Asynchronous Latent Generation in Irregular Image Inpainting: Limits of Geometry-Guided Phase and Content Control</h3>
+<p class="submission-authors">Muzi Ding, Qing Xu, and Xiaofeng Zhang</p>
+<p class="submission-affiliation">Nantong University, China</p>
+<p class="submission-summary">A comparison of synchronous, geometry-guided, and content-controlled latent generation under matched sampling budgets. Geometry-guided progression improves latent reconstruction metrics, while the tested content signals do not establish an overall advantage over the geometric prior.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-07-asynchronous-latent-generation.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article>
+<article class="submission-card" id="paper-9" aria-labelledby="submission-title-9">
+<div class="submission-kind">Paper · 09</div>
+<h3 id="submission-title-9">Temporal Context for Fluoroscopic Catheter and Guidewire Segmentation in Endovascular Robotics</h3>
+<p class="submission-authors">Nathan Huang and Hao Su</p>
+<p class="submission-affiliation">Lubbock High School; NYU Tandon School of Engineering, USA</p>
+<p class="submission-summary">A study of training augmentation and prior-frame context for catheter and guidewire segmentation on the CathAction human subset. On the matched test frames, neither temporal model improves mean Dice over the augmented single-frame U-Net; robotic control and clinical performance were not evaluated.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-09-temporal-context.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
+</article></div></section>
+<section id="demos" class="submission-section" aria-labelledby="demos-heading"><h2 class="sec" id="demos-heading">Demos</h2>
+<p class="body">Watch the demonstration videos and read the accompanying submissions.</p>
+<div class="demo-list"><article class="submission-card demo-card" id="demo-3" aria-labelledby="submission-title-3">
+<div class="submission-kind">Demo · 03</div>
+<h3 id="submission-title-3">A Simulation Platform for Comparing Visual Guidance Strategies in Robotic Surgery Training</h3>
+<p class="submission-authors">Yizhou Li, Shuyuan Yang, and Zonghe Chua</p>
+<p class="submission-affiliation">Case Western Reserve University, USA</p>
+<p class="submission-summary">A SurRoL-based peg-transfer simulator with bimanual Touch-device teleoperation, stereo display, and Varjo eye tracking. The demo presents text, point-of-interest, and foveation guidance under consistent task conditions; user-performance evaluation is future work.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/demo-03-surgical-simulator.pdf" target="_blank" rel="noopener">Demo abstract (PDF)</a><a class="submission-link secondary" href="assets/submissions/demo-03-surgical-simulator.mp4" download>Download original video (MP4)</a></div><video class="demo-video" poster="assets/submissions/demo-03-poster.jpg" controls playsinline preload="metadata" aria-label="Demo video: A Simulation Platform for Comparing Visual Guidance Strategies in Robotic Surgery Training"><source src="assets/submissions/demo-03-surgical-simulator-web.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/submissions/demo-03-surgical-simulator.mp4">Download the demo video</a>.</video>
+</article>
+<article class="submission-card demo-card" id="demo-8" aria-labelledby="submission-title-8">
+<div class="submission-kind">Demo · 08</div>
+<h3 id="submission-title-8">Large Area Vision Based Tactile Sensing with Folded Optics</h3>
+<p class="submission-authors">Yushen Xue, Bin Chen, Haoran Li, and Zhenyu Lu</p>
+<p class="submission-affiliation">Harbin Institute of Technology, Shenzhen; South China University of Technology, Guangzhou, China</p>
+<p class="submission-summary">A four-camera tactile-sensing prototype that folds optical paths over an 86 mm × 86 mm silicone contact surface. Shared image streams support shape classification, contact-trajectory recognition, and multiview deformation reconstruction, with preliminary evidence from one prototype.</p>
+<div class="submission-actions"><a class="submission-link" href="assets/submissions/demo-08-folded-optics.docx" target="_blank" rel="noopener">Demo paper (DOCX)</a><a class="submission-link secondary" href="assets/submissions/demo-08-folded-optics.mp4" download>Download original video (MP4)</a></div><video class="demo-video" poster="assets/submissions/demo-08-poster.jpg" controls playsinline preload="metadata" aria-label="Demo video: Large Area Vision Based Tactile Sensing with Folded Optics"><source src="assets/submissions/demo-08-folded-optics.mp4" type="video/mp4"/>Your browser does not support embedded video. <a href="assets/submissions/demo-08-folded-optics.mp4">Download the demo video</a>.</video>
+</article></div></section>
+<h2 class="sec" id="call-for-contributions">Call for Contributions</h2>
 <div class="cb"><h3>We invite submissions in the following categories:</h3><ul>
 <li><strong>Research Paper</strong> (up to 6 pages + references) - Original research in HIO teleoperation, sensorimotor augmentation, and related fields.</li>
 <li><strong>Work-in-Progress</strong> (up to 2 pages + references) - Preliminary results, emerging ideas, or exploratory studies.</li>
@@ -310,8 +406,7 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 </div>
 <h2 class="sec">Mentor-Mentee Network (MMN)</h2>
 <p class="body">The MMN pairs early-career researchers with established experts for pre-workshop collaborative projects. Selected pairs showcase their work during the afternoon MMN Demonstration Session. Contact <a href="mailto:luzhenyu@scut.edu.cn">luzhenyu@scut.edu.cn</a> to join as a mentor or mentee.</p>
-<h2 class="sec">Accepted Papers</h2>
-<p class="body" style="color:#5f6368">Accepted papers will be listed here after the review process.</p>
+
 </div></div>
 <div class="page" id="p-venue"><div class="content">
 <h2 class="sec">Venue</h2>
@@ -390,9 +485,25 @@ function showPage(id){
     }
   }
   window.scrollTo(0,0);
+  if(window.location.hash && !window.routingContributionHash){history.replaceState(null,'',window.location.pathname+window.location.search+'#'+id);}
 }
 
 
+
+function openWorkshopHash(){
+  var key=window.location.hash.slice(1);
+  if(!key) return;
+  var section=document.getElementById(key);
+  var isContribution=section && document.getElementById('p-contributions').contains(section);
+  var page=document.getElementById('p-'+key);
+  if(!isContribution && !page) return;
+  window.routingContributionHash=true;
+  showPage(isContribution ? 'contributions' : key);
+  window.routingContributionHash=false;
+  if(isContribution){requestAnimationFrame(function(){section.scrollIntoView({block:'start'});});}
+}
+window.addEventListener('hashchange',openWorkshopHash);
+openWorkshopHash();
 </script>
 </body>
 </html>
