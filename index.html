@@ -187,6 +187,15 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 #call-for-contributions{scroll-margin-top:80px}
 .topbar-inner nav{min-width:0;flex:1}
 @media(max-width:768px){.topbar-inner{height:auto;flex-wrap:wrap;gap:0;padding:10px 16px 0}.site-title{font-size:16px;margin-right:0}.topbar-inner nav{flex-basis:100%;width:100%}.submission-section,.submission-card,#call-for-contributions{scroll-margin-top:112px}.submission-card h3{font-size:16px}.demo-card,.demo-card:first-child{padding:16px}}
+
+/* Numbered papers share the same identifiers in Contributions and Programme. */
+.paper-number{font-weight:700;color:#185abc;white-space:nowrap;margin-right:5px}
+.selected-posters{margin:30px 0 24px}
+.selected-papers{list-style:none;padding:0;margin:12px 0 0}
+.selected-papers li{padding:14px 0;border-bottom:1px solid #e0e0e0}
+.selected-papers li:first-child{border-top:1px solid #e0e0e0}
+.selected-papers a{font-size:14px;line-height:1.65;font-weight:500;display:block}
+.selected-papers .submission-authors{font-size:12px;color:#5f6368;margin:6px 0 0}
 </style>
 </head>
 <body>
@@ -275,18 +284,18 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 <table class="sc"><thead><tr><th style="width:120px">Time</th><th>Talk</th><th style="width:190px">Comments</th></tr></thead><tbody>
 <tr><td>13:30 - 13:40</td><td>Welcome and Workshop Introduction — Dr. Ziwei Wang</td><td>Workshop overview, motivation, and introduction to HIO paradigm</td></tr>
 <tr class="ss"><td colspan="3">Session 1: Adaptive and Multimodal Human–Robot Interaction</td></tr>
-<tr><td>13:40 - 14:05</td><td><strong>Prof. Dongjun Lee</strong> — <em>How to Intuitively and Efficiently Teleoperate a Limited-Dexterity Robot Hand for Contact-Rich Manipulation Data Collection</em></td><td>Invited talk (25 min)</td></tr>
-<tr><td>14:05 - 14:30</td><td><strong>Prof. Hao Su</strong> — <em>Deep Reinforcement Learning in Simulation for Versatile Wearable and Surgical Robots</em></td><td>Invited talk (25 min)</td></tr>
+<tr><td>13:40 - 14:05</td><td><strong>Prof. Dongjun Lee</strong> — <em>How to Intuitively and Efficiently Teleoperate a Limited-Dexterity Robot Hand for Contact-Rich Manipulation Data Collection</em></td><td>Invited talk</td></tr>
+<tr><td>14:05 - 14:30</td><td><strong>Prof. Hao Su</strong> — <em>Deep Reinforcement Learning in Simulation for Versatile Wearable and Surgical Robots</em></td><td>Invited talk</td></tr>
 <tr><td>14:30 - 14:45</td><td>Moderated Q&amp;A and Cross-Talk</td><td>Discussion across control, assistive robotics, and wearable interaction</td></tr>
-<tr><td>14:45 - 15:15</td><td>Poster Session</td><td>Selected poster authors give short oral introductions</td></tr>
+<tr><td>14:45 - 15:15</td><td><strong>Prof. Chenguang Yang</strong> — <em>Skill-Based Learning and Compliant Control for Enhanced Human-Robot Teleoperation and Interaction</em></td><td>Invited talk</td></tr>
 <tr class="bk"><td>15:15 - 16:00</td><td>Coffee Break, Posters and Demonstrations</td><td>Official afternoon break; informal discussion around posters and demo systems</td></tr>
 <tr class="ss"><td colspan="3">Session 2: Sensorimotor Augmentation in Real-World Teleoperation</td></tr>
-<tr><td>16:00 - 16:25</td><td><strong>Dr. Enrica Zereik</strong> — <em>Embodied Intelligence and Social Cues for Cooperation in Multi-Robot Systems</em></td><td>Invited talk (25 min)</td></tr>
-<tr><td>16:25 - 16:50</td><td><strong>Prof. Ya-Jun Pan</strong> — <em>Effective Adaptive Robot-robot and Human-robot Interaction</em></td><td>Invited talk (25 min)</td></tr>
-<tr><td>16:50 - 17:15</td><td><strong>Prof. Chenguang Yang</strong> — <em>Skill-Based Learning and Compliant Control for Enhanced Human-Robot Teleoperation and Interaction</em></td><td>Invited talk (25 min)</td></tr>
-<tr><td>17:15 - 17:25</td><td>Poster Session</td><td>Selected poster authors give short oral introductions</td></tr>
+<tr><td>16:00 - 16:25</td><td><strong>Dr. Enrica Zereik</strong> — <em>Embodied Intelligence and Social Cues for Cooperation in Multi-Robot Systems</em></td><td>Invited talk</td></tr>
+<tr><td>16:25 - 16:50</td><td><strong>Prof. Ya-Jun Pan</strong> — <em>Effective Adaptive Robot-robot and Human-robot Interaction</em></td><td>Invited talk</td></tr>
+<tr><td>16:50 - 17:25</td><td>Poster Session</td><td>Selected posters and demos</td></tr>
 <tr><td>17:25 - 17:30</td><td>Closing Remarks and Next Steps</td><td>Summary of technical challenges, benchmarking needs, and deployment priorities</td></tr>
 </tbody></table>
+<section class="selected-posters" aria-labelledby="selected-posters-heading"><h2 class="sec" id="selected-posters-heading">Selected Posters</h2><ul class="selected-papers"><li><a href="#paper-5"><span class="paper-number">#1</span> Execution-Conditioned Reference Handoff for Asynchronous Humanoid Vision-and-Language Navigation</a><p class="submission-authors">Guojie Cui, Tianyu Geng, Hansen Zhang, Fengchen Du, Jianning Chi, and Xiangyue Zhang</p></li><li><a href="#paper-4"><span class="paper-number">#2</span> PAIR-Grasp: A Novel Benchmark Dataset and Model for Low-Light Robotic Grasp Detection</a><p class="submission-authors">Jiahui Zhang, Shuo Wang, Jiamin Zhang, Jing Yang, and Lu Chen</p></li><li><a href="#paper-7"><span class="paper-number">#4</span> Spatially Asynchronous Latent Generation in Irregular Image Inpainting: Limits of Geometry-Guided Phase and Content Control</a><p class="submission-authors">Muzi Ding, Qing Xu, and Xiaofeng Zhang</p></li><li><a href="#paper-9"><span class="paper-number">#5</span> Temporal Context for Fluoroscopic Catheter and Guidewire Segmentation in Endovascular Robotics</a><p class="submission-authors">Nathan Huang and Hao Su</p></li><li><a href="#paper-6"><span class="paper-number">#6</span> Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions</a><p class="submission-authors">Xuhan Miao, Zijin Han, Yutong Shen, Haidong Huang, Shanliushui Gao, Lei Zhang, Xiaocong Li, and Chenguang Yang</p></li><li><a href="#paper-2"><span class="paper-number">#9</span> Runtime-Constrained Residual Execution for Sequential Dual-Sided Grasping</a><p class="submission-authors">Zhangliang Gao, Zhihe Zhou, and Haoran Li</p></li></ul></section>
 <p class="body">Workshop contributions: <a href="#papers">Browse papers</a> · <a href="#demos">Watch demos</a></p>
 <h2 class="sec">Invited Speakers</h2>
 <div id="spk-f"></div>
@@ -319,63 +328,63 @@ footer{text-align:center;padding:16px 24px;font-size:11px;color:#5f6368;border-t
 <div class="contribution-jumps" aria-label="Contribution sections"><a href="#papers">Papers <span>9</span></a><a href="#demos">Demos <span>2</span></a><a href="#call-for-contributions">Submission information</a></div>
 <section id="papers" class="submission-section" aria-labelledby="papers-heading"><h2 class="sec" id="papers-heading">Papers</h2>
 <div class="paper-list"><article class="submission-card" id="paper-5" aria-labelledby="submission-title-5">
-<h3 id="submission-title-5">Execution-Conditioned Reference Handoff for Asynchronous Humanoid Vision-and-Language Navigation</h3>
+<h3 id="submission-title-5"><span class="paper-number">#1</span> Execution-Conditioned Reference Handoff for Asynchronous Humanoid Vision-and-Language Navigation</h3>
 <p class="submission-authors">Guojie Cui, Tianyu Geng, Hansen Zhang, Fengchen Du, Jianning Chi, and Xiangyue Zhang</p>
 <p class="submission-affiliation">Northeastern University, China</p>
 <p class="submission-summary">An execution-aware framework that separates the arrival of a navigation reference from its acceptance by a moving humanoid. It adapts reference geometry and compares keeping, updating, or transitioning between trajectories, with evaluation in simulated Unitree G1 stair navigation.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-05-reference-handoff.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-4" aria-labelledby="submission-title-4">
-<h3 id="submission-title-4">PAIR-Grasp: A Novel Benchmark Dataset and Model for Low-Light Robotic Grasp Detection</h3>
+<h3 id="submission-title-4"><span class="paper-number">#2</span> PAIR-Grasp: A Novel Benchmark Dataset and Model for Low-Light Robotic Grasp Detection</h3>
 <p class="submission-authors">Jiahui Zhang, Shuo Wang, Jiamin Zhang, Jing Yang, and Lu Chen</p>
 <p class="submission-affiliation">Shanxi University, China</p>
 <p class="submission-summary">A physics-grounded RGB-D grasp detection framework that extracts illumination-invariant structural cues for low-light manipulation. The study introduces the RLL-Grasp dataset and reports evaluations on the dataset and in real-world robotic grasping trials.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-04-pair-grasp.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-11" aria-labelledby="submission-title-11">
-<h3 id="submission-title-11">Wearable Smart Insole Based Estimation of Three Dimensional Ground Reaction Forces via Spatio Temporal Attention Fusion</h3>
+<h3 id="submission-title-11"><span class="paper-number">#3</span> Wearable Smart Insole Based Estimation of Three Dimensional Ground Reaction Forces via Spatio Temporal Attention Fusion</h3>
 <p class="submission-authors">Jin Luo, Ziwei Wang, and Liucheng Guo</p>
 <p class="submission-affiliation">Lancaster University; Tangi0 Ltd (TG0), United Kingdom</p>
 <p class="submission-summary">A wearable framework that combines plantar pressure and inertial measurements using spatial and temporal attention to estimate three-dimensional ground reaction forces. Evaluation against a force plate in five healthy adults reports improved performance over a dual-stream attention baseline, with broader validation remaining future work.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/smart-insole-ground-reaction-forces.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-7" aria-labelledby="submission-title-7">
-<h3 id="submission-title-7">Spatially Asynchronous Latent Generation in Irregular Image Inpainting: Limits of Geometry-Guided Phase and Content Control</h3>
+<h3 id="submission-title-7"><span class="paper-number">#4</span> Spatially Asynchronous Latent Generation in Irregular Image Inpainting: Limits of Geometry-Guided Phase and Content Control</h3>
 <p class="submission-authors">Muzi Ding, Qing Xu, and Xiaofeng Zhang</p>
 <p class="submission-affiliation">Nantong University, China</p>
 <p class="submission-summary">A comparison of synchronous, geometry-guided, and content-controlled latent generation under matched sampling budgets. Geometry-guided progression improves latent reconstruction metrics, while the tested content signals do not establish an overall advantage over the geometric prior.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-07-asynchronous-latent-generation.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-9" aria-labelledby="submission-title-9">
-<h3 id="submission-title-9">Temporal Context for Fluoroscopic Catheter and Guidewire Segmentation in Endovascular Robotics</h3>
+<h3 id="submission-title-9"><span class="paper-number">#5</span> Temporal Context for Fluoroscopic Catheter and Guidewire Segmentation in Endovascular Robotics</h3>
 <p class="submission-authors">Nathan Huang and Hao Su</p>
 <p class="submission-affiliation">Lubbock High School; NYU Tandon School of Engineering, USA</p>
 <p class="submission-summary">A study of training augmentation and prior-frame context for catheter and guidewire segmentation on the CathAction human subset. On the matched test frames, neither temporal model improves mean Dice over the augmented single-frame U-Net; robotic control and clinical performance were not evaluated.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-09-temporal-context.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-6" aria-labelledby="submission-title-6">
-<h3 id="submission-title-6">Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions</h3>
+<h3 id="submission-title-6"><span class="paper-number">#6</span> Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions</h3>
 <p class="submission-authors">Xuhan Miao, Zijin Han, Yutong Shen, Haidong Huang, Shanliushui Gao, Lei Zhang, Xiaocong Li, and Chenguang Yang</p>
 <p class="submission-affiliation">Beijing University of Technology; The Hong Kong Polytechnic University; SynnoverAI; Technical University of Munich; University of Hamburg; Eastern Institute of Technology</p>
 <p class="submission-summary">A leader–follower teleoperation method that accounts for coupled transmissions, gravity loads, and actuator saturation. Coordinated motor-space saturation and feasible-reference updates preserve operator motion intent and improve trajectory continuity in real-robot experiments.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/paper-06-operator-intent.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-10" aria-labelledby="submission-title-10">
-<h3 id="submission-title-10">Gaze-Controlled Dual-Arm Teleoperation Based on Visual Separation Scheme: Towards Operational Space-Sensitive Elderly Assistive Manipulation</h3>
+<h3 id="submission-title-10"><span class="paper-number">#7</span> Gaze-Controlled Dual-Arm Teleoperation Based on Visual Separation Scheme: Towards Operational Space-Sensitive Elderly Assistive Manipulation</h3>
 <p class="submission-authors">Yicheng Shi and Ziwei Wang</p>
 <p class="submission-affiliation">Lancaster University, United Kingdom</p>
 <p class="submission-summary">A proposed gaze-controlled dual-arm shared autonomy framework for assistive manipulation in constrained elderly-care environments. A visual separation scheme allocates attention between command generation and situational monitoring; the paper outlines evaluation tasks and expected outcomes.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/gaze-controlled-dual-arm-teleoperation.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-12" aria-labelledby="submission-title-12">
-<h3 id="submission-title-12">Reinforcement Learning-Based Intelligent Control of Lower Limb Exoskeletons for Personalized Gait Rehabilitation</h3>
+<h3 id="submission-title-12"><span class="paper-number">#8</span> Reinforcement Learning-Based Intelligent Control of Lower Limb Exoskeletons for Personalized Gait Rehabilitation</h3>
 <p class="submission-authors">Yiyang He, Ziwei Wang, and Tao Xue</p>
 <p class="submission-affiliation">Lancaster University, United Kingdom; Tsinghua University, China</p>
 <p class="submission-summary">A proposed dual-layer reinforcement learning framework combining patient-specific gait modeling with anticipatory exoskeleton assistance. The approach integrates musculoskeletal simulation, progressive rehabilitation rewards, and instrumented insole sensing, with validation planned from simulation to pilot hardware deployment.</p>
 <div class="submission-actions"><a class="submission-link" href="assets/submissions/reinforcement-learning-exoskeleton-gait-rehabilitation.pdf" target="_blank" rel="noopener">Read paper (PDF)</a></div>
 </article>
 <article class="submission-card" id="paper-2" aria-labelledby="submission-title-2">
-<h3 id="submission-title-2">Runtime-Constrained Residual Execution for Sequential Dual-Sided Grasping</h3>
+<h3 id="submission-title-2"><span class="paper-number">#9</span> Runtime-Constrained Residual Execution for Sequential Dual-Sided Grasping</h3>
 <p class="submission-authors">Zhangliang Gao, Zhihe Zhou, and Haoran Li</p>
 <p class="submission-affiliation">Xi’an Jiaotong-Liverpool University, China</p>
 <p class="submission-summary">A residual-control execution layer for retaining one object while grasping another with a dual-sided dexterous hand. A fixed upstream plan is combined with learned retention adjustments and deterministic command constraints; simulation results provide preliminary feasibility evidence.</p>
